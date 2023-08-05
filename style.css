@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(146deg, rgba(123,35,255,1) 0%, rgb(21, 0, 255) 100%);
+}
+
+h1{
+    color: white;
+    font-family: Archivo;
+    font-size: 2rem;
+}
+
+header,form{
+    display: flex;
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, form button{
+    padding: 1rem;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    font-family: archivo;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: rgba(149, 147, 255, 0.317);
+    color: white;
+}
+
+/* .box{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+} */
+
+.todocontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    min-width: 30%;
+    list-style-type: none;
+    padding-left: 0.5vw;
+    color: white;
+}
+
+.todo{
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 8px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur( 8px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    margin-bottom: 1vh;
+    padding: 1vw;
+}
+
+.delete-btn:hover,.check-btn:hover{
+    cursor: pointer;
+    background-color: rgba(149, 147, 255, 0.317);
+    color: white;
+}
+
+.delete-btn,.check-btn{
+    margin: 1vh;
+    border: none;
+    padding : 0.5vw
+}
+
+.check-btn{
+    background-color: rgb(172, 250, 172);
+    border-radius: 0.2vw;
+}
+
+.delete-btn{
+    background-color: rgb(250, 194, 172);
+    border-radius: 0.2vw;
+    /* padding: 2px; */
+}
