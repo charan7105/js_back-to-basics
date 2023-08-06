@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(146deg, rgba(123,35,255,1) 0%, rgb(21, 0, 255) 100%);
 }
 
@@ -30,8 +30,12 @@ form input, form button{
     font-family: archivo;
 }
 
+button{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🖕</text></svg>") 16 0,auto; 
+}
+
 form button:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: rgba(149, 147, 255, 0.317);
     color: white;
 }
@@ -53,6 +57,7 @@ li{
     list-style-type: none;
     padding-left: 0.5vw;
     color: white;
+    flex: 1;
 }
 
 .todo{
@@ -67,11 +72,10 @@ li{
     justify-content: center;
     gap: 0.5vw;
     margin-bottom: 1vh;
-    padding: 1vw;
+    padding: 7px;
 }
 
 .delete-btn:hover,.check-btn:hover{
-    cursor: pointer;
     background-color: rgba(149, 147, 255, 0.317);
     color: white;
 }
@@ -79,16 +83,21 @@ li{
 .delete-btn,.check-btn{
     margin: 1vh;
     border: none;
-    padding : 0.5vw
+    padding : 0.5vw;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:18px;'><text y='50%'>🖕</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 .check-btn{
     background-color: rgb(172, 250, 172);
     border-radius: 0.2vw;
+    padding: 8px;
+    padding-left: 10px;padding-right: 10px;
+    margin-right:0px ;
 }
 
 .delete-btn{
+    margin-left:1px;
     background-color: rgb(250, 194, 172);
     border-radius: 0.2vw;
-    /* padding: 2px; */
+    padding: 8px;
 }

@@ -15,7 +15,7 @@ function addTodo(event){
     // add class div
     const todoDiv = document.createElement('div')
     todoDiv.classList.add('todo')
-    
+
     // add li 
     const newtodo = document.createElement('li')
     newtodo.innerText = todoinput.value
@@ -35,5 +35,16 @@ function addTodo(event){
     todoDiv.appendChild(deletebutton)
 
     // Append everything
-    todolist.appendChild(todoDiv)
+    if(todoinput.value == ""){
+        alert("Your Input is Empty")
+    }
+    else{
+        todolist.appendChild(todoDiv)
+    }
+    
+
+    // After it need to Clear
+    todoinput.value = "";
+
+    // For Check Button 
 } 
