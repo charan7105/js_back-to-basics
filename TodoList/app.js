@@ -41,7 +41,6 @@ function addTodo(event){
     else{
         todolist.appendChild(todoDiv)
     }
-    
 
     // After it need to Clear
     todoinput.value = "";
